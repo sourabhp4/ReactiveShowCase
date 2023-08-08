@@ -1,0 +1,31 @@
+.work_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.work_contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work_contents > article:hover {
+    background-color: var(--color-primary-variant);
+}
+
+.work_content {
+    flex: 1;
+    margin: 10px;
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    padding: 1.5rem;
+}
+
+.work_content > .btn, .work_content > h4 {
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
