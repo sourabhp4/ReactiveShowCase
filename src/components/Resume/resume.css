@@ -1,0 +1,4 @@
+.resume_content > .resume_iframe {
+    z-index: 1;
+    margin: 0 10%;
+}

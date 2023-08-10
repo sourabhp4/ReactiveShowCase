@@ -1,15 +1,74 @@
 .about__container {
-    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_contents {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10rem;
 }
 
+.about_content1 {
+    width: 60%;
+    margin: 8rem auto 0rem auto;
+}
 
-.about_image {
+.about_content2 {
+    width: 75%;
+    margin: 3rem auto 0 auto;
+}
+
+.about_image1, .about_image2 {
     width: 15rem;
-    margin: 0 auto;
+    padding: 10px;
+    margin: 2rem auto 0 auto;
+    border-radius: 1rem;
+    background-image: linear-gradient(45deg, var(--color-primary-variant), var(--color-primary));
 }
 
-.about_content > h2 {
+.about_image1:hover > img {
+    transform: rotate(-10deg);
+    transition: var(--transition);
+}
+
+.about_image1:not(:hover) > img {
+    transition: var(--transition);
+    transform: rotate(10deg);
+}
+
+.about_image2:hover > img {
+    transition: var(--transition);
+    transform: rotate(10deg);
+}
+
+.about_image2:not(:hover) > img {
+    transition: var(--transition);
+    transform: rotate(-10deg);
+}
+
+
+.about_content1 > h2 {
     color: var(--color-primary);
+}
+
+.about_para {
+    color: var(--color-primary);
+    margin: 1rem auto;
+}
+
+@media screen and (max-width: 600px){
+    .about_contents {
+        margin-bottom: 2rem;
+    }
+
+    .about_content1 {
+        width: 90%;
+        margin: 2rem auto 0rem auto;
+    }
+    
+    .about_content2 {
+        width: 90%;
+        margin: 3rem auto 0 auto;
+    }
 }

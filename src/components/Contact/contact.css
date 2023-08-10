@@ -3,7 +3,6 @@
     flex-wrap: wrap;
 }
 
-
 .contact_contents {
     flex: 1;
     display: flex;
@@ -16,17 +15,22 @@
     width: fit-content;
     margin: 10px;
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
 }
 
 .contact_content > h3, .contact_content > .contact_link {
     margin: 5px auto;
 }
+
+.contact_contents > .contact_content:hover {
+    background: transparent;
+    background-color: var(--color-primary-variant);
+}
+
 
 .contact_link {
     text-decoration: none;
@@ -41,16 +45,7 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 0.4rem;
     display: block;
     margin: 1rem auto;
-    width: 40rem;
+    width: 75%;
     color: var(--color-white);
-}
-
-.contact_message {
-    flex: 1;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact_message .btn {
-    width: 25%;
+    min-width: 10rem;
 }

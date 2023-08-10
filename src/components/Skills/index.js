@@ -18,7 +18,7 @@ const Skills = () => {
                         <BsPatchCheckFill className="skill_icon" />
                         <div>
                             <h4>Java</h4>
-                            <small className="text-light">Intermediate</small>
+                            <small className="text-light">Experienced</small>
                         </div>
                     </article>
                     <article className="experience_article">
@@ -32,7 +32,7 @@ const Skills = () => {
                         <BsPatchCheckFill className="skill_icon"/>
                         <div>
                             <h4>Python</h4>
-                            <small className="text-light">Intermediate</small>
+                            <small className="text-light">Experienced</small>
                         </div>
                     </article>
                     <article className="experience_article">
@@ -53,7 +53,7 @@ const Skills = () => {
                         <BsPatchCheckFill className="skill_icon"/>
                         <div>
                             <h4>PHP</h4>
-                            <small className="text-light">Intermediate</small>
+                            <small className="text-light">Beginner</small>
                         </div>
                     </article>
                     <article className="experience_article">
@@ -78,7 +78,7 @@ const Skills = () => {
                         <BsPatchCheckFill className="skill_icon"/>
                         <div>
                             <h4>CSS</h4>
-                            <small className="text-light">Intermediate</small>
+                            <small className="text-light">Experienced</small>
                         </div>
                     </article>
                 </div>
@@ -117,7 +117,7 @@ const Skills = () => {
                             <BsPatchCheckFill className="skill_icon"/>
                             <div>
                                 <h4>SQL</h4>
-                                <small className="text-light">Intermediate</small>
+                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience_article">

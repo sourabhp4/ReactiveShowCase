@@ -23,7 +23,12 @@ const Works = () => {
                         </div>
                         <h4>OrganizePro</h4>
                         <small className="text-light">Technologies: Kotlin, NodeJS, MongoDB</small>
-                        <br />
+                        <div>
+                            <h5>
+                                Organize Pro is a feature-rich productivity app that offers 
+                                seamless reminders, countdowns, to-do lists, and note-taking capabilities.  
+                            </h5>
+                        </div>
                         <a href="https://github.com/sourabhp4/OrganizePro" className="btn" target="_blank" rel="noreferrer">GoTo Github</a>
                     </article>
 
@@ -33,7 +38,12 @@ const Works = () => {
                         </div>
                         <h4>ReactiveShowCase</h4>
                         <small className="text-light">Technologies: ReactJS</small>
-                        <br />
+                        <div>
+                            <h5>
+                                ReactiveShowcase: Dynamic ReactJS portfolio 
+                                displaying impressive projects, reflecting professionalism and creativity. 
+                            </h5>
+                        </div>
                         <a href="https://github.com/sourabhp4/ReactiveShowCase" className="btn" target="_blank" rel="noreferrer">GoTo Github</a>
                     </article>
 
@@ -43,7 +53,12 @@ const Works = () => {
                         </div>
                         <h4>Agro-Point</h4>
                         <small className="text-light">Technologies: ReactJS, NodeJS, MongoDB</small>
-                        <br />
+                        <div>
+                            <h5>
+                                AgriReviewHub is a cutting-edge platform that simplifies and encourages 
+                                the exchange of valuable product reviews within the agriculture community.  
+                            </h5>
+                        </div>
                         <a href="https://github.com/sourabhp4/Agro-Point" className="btn" target="_blank" rel="noreferrer">GoTo Github</a>
                     </article>
                 </div>
@@ -58,18 +73,35 @@ const Works = () => {
                         </div>
                         <h4>Salesforce Developer Virtual Internship</h4>
                         <small className="text-light">Technologies: Salesforce Platform</small>
-                        <br />
-                        <a href="https://github.com/sourabhp4/Agro-Point" className="btn" target="_blank" rel="noreferrer">View Cerificate</a>
+                        <div className="center">
+                            <strong>April 2023 - May 2023</strong>
+                        </div>
+                        <div>
+                            <h5>
+                                The Virtual Internship provided a hands-on experience as a Salesforce 
+                                Developer by leveraging the Trailhead platform. 
+                            </h5>
+                        </div>
+                        <a 
+                        href="https://smartinternz.com/internships/salesforce_certificates/2864c252715c01e09de3dac606f6872c" 
+                        className="btn" target="_blank" rel="noreferrer">
+                            View Cerificate</a>
                     </article>
-
 
                     <article className="work_content">
                         <div className="work_img">
                             <img src={easycheezIMG} alt="EasyCheezImage" />
                         </div>
                         <h4>Backend Developer</h4>
-                        <small className="text-light">Technologies: NodeJS, MongoDB, Express Framework and REST</small>
-                        <br />
+                        <small className="text-light">Technologies: NodeJS, MongoDB</small>
+                        <div className="center">
+                            <strong>August 2022 - January 2023</strong>
+                        </div>
+                        <div>
+                            <h5>
+                                A food delivery app that provides a platform to connect retailers with customers. 
+                            </h5>
+                        </div>
                         <a href="https://github.com/sourabhp4/backend-easycheez_2.0" className="btn" target="_blank" rel="noreferrer">GoTo Github</a>
                     </article>
                 </div>
