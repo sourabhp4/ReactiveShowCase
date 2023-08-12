@@ -1,6 +1,3 @@
-# ReactiveShowCase
-ReactiveShowcase is a meticulously crafted portfolio website built with ReactJS, showcasing an impressive collection of projects and accomplishments, presenting a dynamic and engaging experience that reflects professionalism and creativity.
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,25 +1,19 @@
-import './App.css'
-import React from 'react'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Skills from './components/Skills'
-import Works from './components/Works'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Resume from './components/Resume'
+import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Skills from './components/Skills';
+import Works from './components/Works';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Resume from './components/Resume';
 
-import ScrollToTopOnRouteChange from './components/ScrollToTop'
+import ScrollToTopOnRouteChange from './components/ScrollToTop';
 
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    useLocation
-  } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
-    
     return (
         <div className="App">
             <Router>
@@ -36,26 +30,26 @@ function App() {
             </Router>
             <Footer />
         </div>
-    )
+    );
 }
 
 function NavbarWrapper() {
-    const location = useLocation()
-    let activeState
-  
-    if (location.pathname === '/skills') {
-      activeState = 'skills'
-    } else if (location.pathname === '/works') {
-      activeState = 'works'
-    } else if (location.pathname === '/contact') {
-      activeState = 'contact'
-    } else if (location.pathname === '/resume') {
-      activeState = 'resume'
-    } else {
-      activeState = 'about'
-    }
-  
-    return <Navbar state={activeState} />
-  }
+    const location = useLocation();
+    let activeState;
 
-export default App
+    if (location.pathname === '/skills') {
+        activeState = 'skills';
+    } else if (location.pathname === '/works') {
+        activeState = 'works';
+    } else if (location.pathname === '/contact') {
+        activeState = 'contact';
+    } else if (location.pathname === '/resume') {
+        activeState = 'resume';
+    } else {
+        activeState = 'about';
+    }
+
+    return <Navbar state={activeState} />;
+}
+
+export default App;

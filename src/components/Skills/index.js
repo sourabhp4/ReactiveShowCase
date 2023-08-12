@@ -2,14 +2,20 @@ import React from 'react'
 import './skills.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { BiSolidCheckSquare } from 'react-icons/bi'
+import { motion } from 'framer-motion'
 
 const Skills = () => {
   return (
-    <section>
+    <motion.section
+        initial={{ y: '200vh' }}
+        animate={{ y: 0, transition: { duration: 0.5 } }}
+    >
         <h5>What skills I have</h5>
         <h2>SKILLS</h2>
         <div className="container experience__container">
-            <div className="languages_frameworks">
+            <motion.div className="languages_frameworks"
+                whileHover={{ scale: 1.1 }}
+            >
                 <h3>Languages and Technologies</h3>
 
                 <h5>Languages</h5>
@@ -107,8 +113,10 @@ const Skills = () => {
                         </div>
                     </article>
                 </div>
-            </div>
-            <div className="tools">
+            </motion.div>
+            <motion.div className="tools"
+                whileHover={{ scale: 1.1 }}
+            >
                 <h3>Databases and Tools</h3>
                 <div className="databases_tools">
                     <h5>Databases</h5>
@@ -181,9 +189,9 @@ const Skills = () => {
                         </article>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
-    </section>
+    </motion.section>
   )
 }
 

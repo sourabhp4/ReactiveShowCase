@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './about.css'
 
 import TypeWriter from './typeLooper' 
@@ -10,7 +11,11 @@ const About = () => {
   return (
     <section>
         <div className="container about__container">
-            <div className="about_contents">
+            <motion.div className="about_contents"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 1 }}
+            >
                 <div className="about_content1">
                     <h2>
                         Hey there... <br />
@@ -23,9 +28,13 @@ const About = () => {
                 <div className="about_image1">
                     <img src={logoIMG} alt="Context" />
                 </div>
-            </div>
+            </motion.div>
             
-            <div className="about_contents">
+            <motion.div className="about_contents"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 1 }}
+            >
                 <div className="about_content2">
                     <h1>LET ME INTRODUCE MYSELF</h1>
                     <p className="about_para">I fell in love with <strong>programming</strong> and I have at least learnt
@@ -40,7 +49,7 @@ const About = () => {
                 <div className="about_image2">
                     <img src={codeIMG} alt="Context" />
                 </div>
-            </div>
+            </motion.div>
         </div>
     </section>
   )

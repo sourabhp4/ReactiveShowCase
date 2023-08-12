@@ -3,6 +3,7 @@ import './contact.css'
 
 import React, { useRef } from 'react'
 import emailjs from 'emailjs-com'
+import { motion } from 'framer-motion'
 
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillLinkedin } from 'react-icons/ai'
@@ -25,28 +26,37 @@ const Contact = () => {
 
 
     return (
-        <section>
+        <motion.section
+            initial={{ y: '200vh'}}
+            animate={{ y: 0, transition: { duration: 0.5 } }}
+        >
             <h5>Get in Touch</h5>
             <h2>CONTACT ME</h2>
 
             <div className="container contact__container">
 
                 <div className="contact_contents">
-                    <div className="contact_content">
+                    <motion.div className="contact_content"
+                        whileHover={{ scale: 1.1 }}
+                    >
                         <HiOutlineMail size={25} />
                         <h3>Email</h3>
                         <small className="text-light">sourabhp94503@gmail.com</small><br/>
                         <a href="mailto:sourabhp94503@gmail.com" className="contact_link" target="_blank" rel="noreferrer">Send a message</a>
-                    </div>
-                    <div className="contact_content">
+                    </motion.div>
+                    <motion.div className="contact_content"
+                        whileHover={{ scale: 1.1 }}
+                    >
                         <AiFillLinkedin size={25}/>
                         <h3>LinkedIn</h3>
                         <small className="text-light">sourabh-p-a239a1228</small><br/>
                         <a href="https://www.linkedin.com/in/sourabh-p-a239a1228/message/" className="contact_link" target="_blank" rel="noreferrer">Send a message</a>
-                    </div>
+                    </motion.div>
                 </div>
                 
-                <div className="contact_content">
+                <motion.div className="contact_content"
+                        whileHover={{ scale: 1.1 }}
+                >
                     <h3>Message me</h3>
                     <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name="name" placeholder="Your Name" required />
@@ -54,9 +64,9 @@ const Contact = () => {
                         <textarea name="message" id="message" rows="6" placeholder="Write your message here"></textarea>
                         <input type="submit" className="btn" value="Send"/>
                     </form>
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

@@ -15,7 +15,7 @@
 
 .work_content {
     flex: 1;
-    margin: 10px;
+    margin: 15px;
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
