@@ -14,7 +14,7 @@ const resume = () => {
         <div className="resume_content">
             <iframe className="resume_iframe"
             title="Resume Preview"
-            src="https://drive.google.com/file/d/1-KIVQI43u6OWB6dUvb4_f2JDOxx-3T5-/preview"
+            src="https://drive.google.com/file/d/1c19VqXtZx16k9jlpkJJDqbeuSnvs4vyS/preview"
             width="75%"
             height="600px"
             ></iframe>
