@@ -1,14 +1,14 @@
 
 import './contact.css'
 
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import emailjs from 'emailjs-com'
 import { motion } from 'framer-motion'
 
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillLinkedin } from 'react-icons/ai'
 
-const Contact = () => {
+const Contact = (props) => {
     const form = useRef()
 
     const sendEmail = (e) => {
@@ -24,6 +24,9 @@ const Contact = () => {
         e.target.reset()
     }
 
+    useEffect(() => {
+        props.changePath();
+    }, []);    
 
     return (
         <motion.section

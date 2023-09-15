@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import './about.css'
 
@@ -7,7 +7,11 @@ import TypeWriter from './typeLooper'
 import logoIMG from '../../assets/PortfolioLogo.png'
 import codeIMG from '../../assets/logo.jpg'
 
-const About = () => {
+const About = (props) => {
+    useEffect(() => {
+        props.changePath();
+    }, []);
+
   return (
     <section>
         <div className="container about__container">

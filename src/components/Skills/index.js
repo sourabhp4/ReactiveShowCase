@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './skills.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { BiSolidCheckSquare } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 
-const Skills = () => {
+const Skills = (props) => {
+    useEffect(() => {
+        props.changePath();
+    }, []);
+
   return (
     <motion.section
         initial={{ y: '200vh' }}

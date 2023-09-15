@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './works.css'
 import { motion } from 'framer-motion'
 
@@ -8,7 +8,11 @@ import AgroPointIMG from '../../assets/AgroPoint.png'
 import easycheezIMG from '../../assets/easyCheez.jpeg'
 import SalesforceIMG from '../../assets/Salesforce.com_logo.png'
 
-const Works = () => {
+const Works = (props) => {
+    useEffect(() => {
+        props.changePath();
+    }, []);
+
   return (
     <motion.section
         initial={{ y: '200vh' }}

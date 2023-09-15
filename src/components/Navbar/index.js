@@ -8,7 +8,6 @@ import { AiOutlinePhone } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 
 function Navbar(props) {
-    const [currentNav, setState] = useState(props.state)
     const [bottom, setBottom] = useState(2)
 
     const handleScroll = () => {
@@ -34,11 +33,11 @@ function Navbar(props) {
 
     return (
         <nav style={{ bottom: `${bottom}rem`, transition: 'all 400ms ease' }}>
-            <Link className={currentNav === 'about' ? "link-current" : "link"} onClick={() => setState("about")} to="/"> <AiOutlineHome /> </Link>
-            <Link className={currentNav === 'skills' ? "link-current" : "link"} onClick={() => setState("skills")} to="/skills"> <RiLightbulbFlashLine /> </Link>
-            <Link className={currentNav === 'works' ? "link-current" : "link"} onClick={() => setState("works")} to="/works"> <BsRocketTakeoffFill /> </Link>
-            <Link className={currentNav === 'resume' ? "link-current" : "link"} onClick={() => setState("resume")} to="/resume"> <CgProfile /> </Link>
-            <Link className={currentNav === 'contact' ? "link-current" : "link"} onClick={() => setState("contact")} to="/contact"> <AiOutlinePhone /> </Link>
+            <Link className={! ['skills', 'works', 'resume', 'contact'].includes(props.path) ? "link-current" : "link"}  to="/"> <AiOutlineHome /> </Link>
+            <Link className={props.path === 'skills' ? "link-current" : "link"} to="/skills"> <RiLightbulbFlashLine /> </Link>
+            <Link className={props.path === 'works' ? "link-current" : "link"}  to="/works"> <BsRocketTakeoffFill /> </Link>
+            <Link className={props.path === 'resume' ? "link-current" : "link"} to="/resume"> <CgProfile /> </Link>
+            <Link className={props.path === 'contact' ? "link-current" : "link"} to="/contact"> <AiOutlinePhone /> </Link>
         </nav>
     )
 }

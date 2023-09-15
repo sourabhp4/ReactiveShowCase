@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import './resume.css'
 
-const resume = () => {
+const Resume = (props) => {
+  useEffect(() => {
+      props.changePath();
+  }, []);
+
   return (
     <motion.section
         initial={{ y: '200vh' }}
@@ -23,4 +27,4 @@ const resume = () => {
   )
 }
 
-export default resume
+export default Resume
