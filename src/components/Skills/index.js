@@ -181,7 +181,7 @@ const Skills = (props) => {
                         </article>
                         <article className="experience_article">
                             <BiSolidCheckSquare className="skill_icon"/>
-                            <h4>AndoidStudio</h4>
+                            <h4>AndroidStudio</h4>
                         </article>
                         <article className="experience_article">
                             <BiSolidCheckSquare className="skill_icon"/>
