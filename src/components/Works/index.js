@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import ReminderNoteIMG from '../../assets/OrganizePro.png'
 import PortFolioIMG from '../../assets/PortfolioLogo.png'
 import AgroPointIMG from '../../assets/AgroPoint.png'
+import KSPCBImage from '../../assets/kspcbImage.png'
 import easycheezIMG from '../../assets/easyCheez.jpeg'
 import SalesforceIMG from '../../assets/Salesforce.com_logo.png'
 
@@ -83,7 +84,26 @@ const Works = (props) => {
             <div className="internship_container">
                 <h3>Internships</h3>
                 <br />
-                <div className="work_contents">
+                <div className="work_contents"> 
+                <motion.article className="work_content"
+                        whileHover={{ scale: 1.1 }}
+                >
+                    <div className="work_img">
+                        <img src={ KSPCBImage } alt="KSPCBImage" />
+                    </div>
+                    <h4>Software Developer</h4>
+                    <small className="text-light">Technologies: ReactJS, NodeJS, PostgreSQL</small>
+                    <div className="center">
+                        <strong>August 2023 - Present</strong>
+                    </div>
+                    <div>
+                        <h5>
+                        Enhanced experience in Full Stack Software Development using ReactJS, Node.JS, Express, and PostgreSQL.
+                        Learning and implementing newer technologies like ElectronJS for computer software development.
+                        </h5>
+                    </div>
+                </motion.article>
+
                 <motion.article className="work_content"
                         whileHover={{ scale: 1.1 }}
                 >
