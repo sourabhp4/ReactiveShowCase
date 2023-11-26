@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Resume from './components/Resume'
+import Particle from './components/Particles'
 
 import ScrollToTopOnRouteChange from './components/ScrollToTop'
 
@@ -25,6 +26,7 @@ function App() {
 
     return (
         <div className="App">
+            <Particle />
             <Router>
                 <Header/>
                 <ScrollToTopOnRouteChange />
@@ -36,8 +38,8 @@ function App() {
                     <Route path="/*" element={<About changePath={changePath} />} />
                 </Routes>
                 <Navbar path={path} />
+                <Footer />
             </Router>
-            <Footer />
         </div>
     );
 }

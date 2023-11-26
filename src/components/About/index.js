@@ -13,7 +13,7 @@ const About = (props) => {
     }, []);
 
   return (
-    <section>
+    <section className='main_component'>
         <div className="container about__container">
             <motion.div className="about_contents"
                 initial={{ opacity: 0 }}
