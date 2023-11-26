@@ -137,7 +137,7 @@ const Works = (props) => {
                                 <h4>Backend Developer</h4>
                                 <small className="text-light">Technologies: NodeJS, MongoDB</small>
                                 <div className="center">
-                                    <strong>August 2022 - January 2023</strong>
+                                    <strong>October 2022 - December 2022</strong>
                                 </div>
                                 <div>
                                     <h5>
@@ -145,6 +145,7 @@ const Works = (props) => {
                                     </h5>
                                 </div>
                                 <a href="https://github.com/sourabhp4/client-backend" className="btn" target="_blank" rel="noreferrer">GoTo Github</a>
+                                <br/>
                                 <a href="https://drive.google.com/file/d/1BXUSKSrzDCyXqI-ipM1wP-RfMbLdSIgO/view" className="btn" target="_blank" rel="noreferrer">View Certificate</a>
                             </motion.article>
                         </div>
